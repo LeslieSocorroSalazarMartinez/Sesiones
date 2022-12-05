@@ -1,0 +1,11 @@
+<?php
+
+	function conecta(){
+		$con=mysqli_connect("localhost", "root", "leslie", "museo");
+		if(mysqli_connect_error()){
+			echo "problemas para conectar a la base de datos".mysqli_connect_error();
+		}
+		return $con;
+	}
+
+?>
